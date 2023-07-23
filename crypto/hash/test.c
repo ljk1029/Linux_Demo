@@ -8,12 +8,12 @@
 
 void test_md5()
 {
-    MD5_CTX ctx;
     unsigned char digest[256];
     char message[256];
     printf("Plain Text: ");
     scanf("%s", message);
 
+    //  MD5_CTX ctx;
     //MD5_Init(&ctx);
     //MD5_Update(&ctx, (unsigned char *)message, strlen(message));
     //MD5_Final(&ctx, digest);
@@ -29,33 +29,27 @@ void test_md5()
 
 void test_sha()
 {
-    MD5_CTX ctx;
-    unsigned char digest[256];
-    char message[256];
+    unsigned char digest[256] = {0};
+    char message[256] = {0};
     printf("Plain Text: ");
     scanf("%s", message);
 
-    //MD5_Init(&ctx);
-    //MD5_Update(&ctx, (unsigned char *)message, strlen(message));
-    //MD5_Final(&ctx, digest);
-    MD5((unsigned char *)message, strlen(message), digest);
-
-    printf("\n");
-    printf("MD5 Digest: ");
-    for (int i = 0; i < 16; i++) {
-        printf("%02x", digest[i]);
-    }
-    printf("\n"); 
-
-    memset(digest, 0, 256);
     SHA1((unsigned char *)message, strlen(message), digest);
     printf("SHA1 Digest: ");
     for (int i = 0; i < 20; i++) {
         printf("%02x", digest[i]);
     }
     printf("\n");
-    
-    memset(digest, 0, 256);
+}
+
+void test_sha256()
+{
+    MD5_CTX ctx;
+    unsigned char digest[256];
+    char message[256];
+    printf("Plain Text: ");
+    scanf("%s", message);
+
     int len = strlen(message);
     SHA256((unsigned char *)message, len, digest);
     printf("SHA256 Digest: ");
@@ -63,8 +57,15 @@ void test_sha()
         printf("%02x", digest[i]);
     }
     printf("\n"); 
+}
 
-    memset(digest, 0, 256);
+void test_sha512()
+{
+    unsigned char digest[256];
+    char message[256];
+    printf("Plain Text: ");
+    scanf("%s", message);
+
     SHA512((unsigned char *)message, strlen(message), digest);
     printf("SHA512 Digest: ");
     for (int i = 0; i < 64; i++) {
@@ -73,9 +74,11 @@ void test_sha()
     printf("\n");
 }
 
-
 int main()
 {
+    test_md5();
     test_sha();
+    test_sha256();
+    test_sha512();
     return 0;
 }
