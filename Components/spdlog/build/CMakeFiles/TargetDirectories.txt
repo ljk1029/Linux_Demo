@@ -1,0 +1,3 @@
+/mnt/hgfs/MyWork/github/A_Linux/Components/spdlog/build/CMakeFiles/spdlog.dir
+/mnt/hgfs/MyWork/github/A_Linux/Components/spdlog/build/CMakeFiles/edit_cache.dir
+/mnt/hgfs/MyWork/github/A_Linux/Components/spdlog/build/CMakeFiles/rebuild_cache.dir

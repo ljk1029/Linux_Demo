@@ -1,0 +1,3 @@
+/mnt/hgfs/MyWork/github/A_Linux/Components/sqlite3/build/CMakeFiles/sqlite3.dir
+/mnt/hgfs/MyWork/github/A_Linux/Components/sqlite3/build/CMakeFiles/edit_cache.dir
+/mnt/hgfs/MyWork/github/A_Linux/Components/sqlite3/build/CMakeFiles/rebuild_cache.dir
