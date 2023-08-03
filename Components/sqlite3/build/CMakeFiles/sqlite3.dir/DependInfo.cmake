@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/mnt/hgfs/MyWork/github/A_Linux/Components/sqlite3/src/mysqlite.c" "CMakeFiles/sqlite3.dir/src/mysqlite.c.o" "gcc" "CMakeFiles/sqlite3.dir/src/mysqlite.c.o.d"
-  "/mnt/hgfs/MyWork/github/A_Linux/Components/sqlite3/src/sqlite3.c" "CMakeFiles/sqlite3.dir/src/sqlite3.c.o" "gcc" "CMakeFiles/sqlite3.dir/src/sqlite3.c.o.d"
+  "/home/ljk/MyWork/github/A_Linux/Components/sqlite3/src/mysqlite.c" "CMakeFiles/sqlite3.dir/src/mysqlite.c.o" "gcc" "CMakeFiles/sqlite3.dir/src/mysqlite.c.o.d"
+  "/home/ljk/MyWork/github/A_Linux/Components/sqlite3/src/sqlite3.c" "CMakeFiles/sqlite3.dir/src/sqlite3.c.o" "gcc" "CMakeFiles/sqlite3.dir/src/sqlite3.c.o.d"
   )
 
 # Targets to which this target links.

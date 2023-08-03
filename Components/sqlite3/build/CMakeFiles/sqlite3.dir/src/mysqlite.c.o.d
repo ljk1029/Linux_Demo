@@ -1,5 +1,5 @@
 CMakeFiles/sqlite3.dir/src/mysqlite.c.o: \
- /mnt/hgfs/MyWork/github/A_Linux/Components/sqlite3/src/mysqlite.c \
+ /home/ljk/MyWork/github/A_Linux/Components/sqlite3/src/mysqlite.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -50,7 +50,7 @@ CMakeFiles/sqlite3.dir/src/mysqlite.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min.h \
- /mnt/hgfs/MyWork/github/A_Linux/Components/sqlite3/include/mysqlite.h \
+ /home/ljk/MyWork/github/A_Linux/Components/sqlite3/include/mysqlite.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
- /mnt/hgfs/MyWork/github/A_Linux/Components/sqlite3/include/sqlite3.h \
- /mnt/hgfs/MyWork/github/A_Linux/Components/sqlite3/include/sqlite3.h
+ /home/ljk/MyWork/github/A_Linux/Components/sqlite3/include/sqlite3.h \
+ /home/ljk/MyWork/github/A_Linux/Components/sqlite3/include/sqlite3.h

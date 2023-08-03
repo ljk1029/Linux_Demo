@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/mnt/hgfs/MyWork/github/A_Linux/Components/spdlog/include -I/mnt/hgfs/MyWork/github/A_Linux/Components/spdlog/include/adapter
+CXX_INCLUDES = -I/home/ljk/MyWork/github/A_Linux/Components/spdlog/include -I/home/ljk/MyWork/github/A_Linux/Components/spdlog/include/adapter
 
 CXX_FLAGS =  -g -std=gnu++11
 

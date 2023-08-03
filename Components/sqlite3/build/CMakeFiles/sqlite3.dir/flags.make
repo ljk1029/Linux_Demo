@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/mnt/hgfs/MyWork/github/A_Linux/Components/sqlite3/include
+C_INCLUDES = -I/home/ljk/MyWork/github/A_Linux/Components/sqlite3/include
 
 C_FLAGS = 
 
