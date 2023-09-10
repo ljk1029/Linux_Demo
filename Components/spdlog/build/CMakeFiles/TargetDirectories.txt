@@ -1,3 +1,0 @@
-/home/ljk/MyWork/github/A_Linux/Components/spdlog/build/CMakeFiles/spdlog.dir
-/home/ljk/MyWork/github/A_Linux/Components/spdlog/build/CMakeFiles/edit_cache.dir
-/home/ljk/MyWork/github/A_Linux/Components/spdlog/build/CMakeFiles/rebuild_cache.dir
