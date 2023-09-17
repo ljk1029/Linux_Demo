@@ -1,11 +1,12 @@
 ## 库编译
 ./config
 make
-
+make install
 
 或者
 cmake ..
 make
+make install
 
 ## 使用库编译
 1）获取数据包捕获描述字 

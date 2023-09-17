@@ -4,7 +4,7 @@ exe_name=demo_$lib_name
 out_path=./build
 
 
-# pacp
+# pcap
 function build_part() {
     rm $out_path/$exe_name.o 
     if [ ! -d "$out_path" ]; then
@@ -14,19 +14,19 @@ function build_part() {
     mv $exe_name.o $out_path
 }
 
-# pacp
-function build_lib_pacp() {
+# pcap
+function build_lib_pcap() {
     cd $lib_path
     echo "build lib$exe_name"
 }
 
-# pacp
-function build_pacp() {
+# pcap
+function build_pcap() {
     echo "build $exe_name"
     build_part
 }
 
-function run_pacp() {
+function run_pcap() {
     echo "run $exe_name"
     $out_path/$exe_name.o  
 }
@@ -45,9 +45,9 @@ if [ $# = 0 ]; then
     usage
 else
     if [ $1 == 'b' ]; then
-        build_pacp
+        build_pcap
     elif [ $1 == 'r' ];then
-        run_pacp
+        run_pcap
     elif [ $1 == 'l' ];then
         build_lib
     fi

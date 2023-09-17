@@ -1,34 +1,42 @@
 lib_path=
-lib_name=pcap
+lib_name=websockets
 exe_name=demo_$lib_name
 out_path=./build
 
 
-# pacp
+# wss
 function build_part() {
-    rm $out_path/$exe_name.o 
+    rm $out_path/${exe_name}_s.o 
+    rm $out_path/${exe_name}_c.o 
     if [ ! -d "$out_path" ]; then
         mkdir $out_path
     fi
-    gcc $exe_name.c -I ./include/ -g -o $exe_name.o -L ./lib/ -l$lib_name 
-    mv $exe_name.o $out_path
+    gcc ${exe_name}_s.c -I ./include/ -I ../openssl/include/ -g -o ${exe_name}_s.o -L ./lib/ -L ../openssl/lib -l$lib_name -lssl -lcrypto
+    gcc ${exe_name}_c.c -I ./include/ -I ../openssl/include/ -g -o ${exe_name}_c.o -L ./lib/ -L ../openssl/lib -l$lib_name -lssl -lcrypto
+    mv ${exe_name}_s.o $out_path
+    mv ${exe_name}_c.o $out_path
 }
 
-# pacp
-function build_lib_pacp() {
+# wss
+function build_lib_wss() {
     cd $lib_path
     echo "build lib$exe_name"
 }
 
-# pacp
-function build_pacp() {
+# wss
+function build_wss() {
     echo "build $exe_name"
     build_part
 }
 
-function run_pacp() {
+function run_wss_s() {
     echo "run $exe_name"
-    $out_path/$exe_name.o  
+    $out_path/${exe_name}_s.o  
+}
+
+function run_wss_c() {
+    echo "run $exe_name"
+    $out_path/${exe_name}_c.o  
 }
 
 #usage
@@ -36,7 +44,8 @@ function usage() {
     echo "[I] Usage: [sh $0 cmd]"
     echo 'l  build ' $exe_name
     echo 'b  build ' $exe_name
-	echo 'r  run   ' $exe_name
+	echo 'r-c  run ' $exe_name
+	echo 'r-s  run ' $exe_name
 }
 
 
@@ -45,9 +54,11 @@ if [ $# = 0 ]; then
     usage
 else
     if [ $1 == 'b' ]; then
-        build_pacp
-    elif [ $1 == 'r' ];then
-        run_pacp
+        build_wss
+    elif [ $1 == 'r-s' ];then
+        run_wss_s
+     elif [ $1 == 'r-c' ];then
+        run_wss_c
     elif [ $1 == 'l' ];then
         build_lib
     fi
