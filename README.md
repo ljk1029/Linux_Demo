@@ -1,5 +1,7 @@
 # Linux 学习
 	应用各个章节各个类
+## 版本
+version V1.0.1
 
 ## 1、Linux
 ### openCom 
