@@ -1,10 +1,9 @@
 # Linux 学习
-	各个章节各个类
+	应用各个章节各个类
 
 ## 1、Linux
 ### openCom 
-直接可以编译
-开源小组件
+简单编译、开源小组件
 
 base64
 cjson
@@ -14,24 +13,37 @@ zlog
 
 
 ### openLib 
-复杂编译
-开源库
+复杂编译、开源库
 openssl
 
 
 
 ### crypto
-加解密内容
+加解密内容相关
+
 
 ### IPC
-进程、线程
+进程、线程相关
+
 
 ### network
 网络相关
 
+
+### driver
+驱动相关
+
+
 ## 2、Lua
 lua语言
 
+
 ## 3、加密网站
 https://the-x.cn/cryptography/Aes.aspx
+
+
+## 提交类型
+  - feat: 新功能（feature）
+  - fix: 修补bug
+  - refactor: 重构
 	

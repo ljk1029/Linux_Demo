@@ -2,7 +2,7 @@
 
 lib_path=../src/libspdlog/build
 lib_name=spdlog
-exe_name=demo_$lib_name
+exe_name=${lib_name}_test
 out_path=../build
 
 function build_part() {

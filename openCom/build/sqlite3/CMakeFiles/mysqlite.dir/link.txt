@@ -1,0 +1,1 @@
+/usr/bin/cc  -std=gnu99 -O0 -g -std=gnu99 -O0 -g CMakeFiles/mysqlite.dir/sqlite3_test.c.o CMakeFiles/mysqlite.dir/libsqlite3/src/mysqlite.c.o CMakeFiles/mysqlite.dir/libsqlite3/src/sqlite3.c.o -o ../../bin/mysqlite 

@@ -1,3 +1,0 @@
-/home/ljk/hgfslink/MyWork/github/A_Linux/OpenCom/src/libsqlite3/build/CMakeFiles/sqlite3.dir
-/home/ljk/hgfslink/MyWork/github/A_Linux/OpenCom/src/libsqlite3/build/CMakeFiles/edit_cache.dir
-/home/ljk/hgfslink/MyWork/github/A_Linux/OpenCom/src/libsqlite3/build/CMakeFiles/rebuild_cache.dir
