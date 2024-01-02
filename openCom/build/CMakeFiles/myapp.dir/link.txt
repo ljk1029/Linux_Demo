@@ -1,1 +1,0 @@
-/usr/bin/cc  -std=gnu99 -O0 -g CMakeFiles/myapp.dir/demo.c.o -o ../bin/myapp 

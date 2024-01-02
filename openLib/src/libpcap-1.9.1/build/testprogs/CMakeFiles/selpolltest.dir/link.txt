@@ -1,1 +1,0 @@
-/usr/bin/cc -rdynamic CMakeFiles/selpolltest.dir/selpolltest.c.o -o ../run/selpolltest  ../libpcap.a 

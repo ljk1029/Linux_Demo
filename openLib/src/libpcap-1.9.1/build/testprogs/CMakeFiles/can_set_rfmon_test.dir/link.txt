@@ -1,1 +1,0 @@
-/usr/bin/cc -rdynamic CMakeFiles/can_set_rfmon_test.dir/can_set_rfmon_test.c.o -o ../run/can_set_rfmon_test  ../libpcap.a 
