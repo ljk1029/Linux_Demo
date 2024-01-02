@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/root/VMCode/github/A_Linux_Demo/openCom/demo.c" "CMakeFiles/myapp.dir/demo.c.o" "gcc" "CMakeFiles/myapp.dir/demo.c.o.d"
+  "/home/ljk/hgfs.link/VMCode/github/A_Linux_Demo/OpenCom/demo.c" "CMakeFiles/myapp.dir/demo.c.o" "gcc" "CMakeFiles/myapp.dir/demo.c.o.d"
   )
 
 # Targets to which this target links.

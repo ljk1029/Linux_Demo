@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/root/VMCode/github/A_Linux_Demo/openCom
+C_INCLUDES = -I/home/ljk/hgfs.link/VMCode/github/A_Linux_Demo/OpenCom
 
 C_FLAGS =  -std=gnu99 -O0 -g
 

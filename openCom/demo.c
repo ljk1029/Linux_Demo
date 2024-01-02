@@ -3,6 +3,6 @@
 
 int main(int argc, char* argv[])
 {
-    printf("hello, openCom!\n\n");
+    printf("hello, OpenCom!\n\n");
     return 0;
 }

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/VMCode/github/A_Linux_Demo/openCom
+CMAKE_SOURCE_DIR = /home/ljk/hgfs.link/VMCode/github/A_Linux_Demo/OpenCom
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/VMCode/github/A_Linux_Demo/openCom/build
+CMAKE_BINARY_DIR = /home/ljk/hgfs.link/VMCode/github/A_Linux_Demo/OpenCom/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/VMCode/github/A_Linux_Demo/openCom/build/CMakeFiles /root/VMCode/github/A_Linux_Demo/openCom/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ljk/hgfs.link/VMCode/github/A_Linux_Demo/OpenCom/build/CMakeFiles /home/ljk/hgfs.link/VMCode/github/A_Linux_Demo/OpenCom/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/VMCode/github/A_Linux_Demo/openCom/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ljk/hgfs.link/VMCode/github/A_Linux_Demo/OpenCom/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -130,69 +130,69 @@ myapp/fast:
 .PHONY : myapp/fast
 
 #=============================================================================
-# Target rules for targets named mybase64
+# Target rules for targets named my_base64
 
 # Build rule for target.
-mybase64: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mybase64
-.PHONY : mybase64
+my_base64: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_base64
+.PHONY : my_base64
 
 # fast build rule for target.
-mybase64/fast:
-	$(MAKE) $(MAKESILENT) -f base64/CMakeFiles/mybase64.dir/build.make base64/CMakeFiles/mybase64.dir/build
-.PHONY : mybase64/fast
+my_base64/fast:
+	$(MAKE) $(MAKESILENT) -f com_base64/CMakeFiles/my_base64.dir/build.make com_base64/CMakeFiles/my_base64.dir/build
+.PHONY : my_base64/fast
 
 #=============================================================================
-# Target rules for targets named mycjson
+# Target rules for targets named my_cjson
 
 # Build rule for target.
-mycjson: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mycjson
-.PHONY : mycjson
+my_cjson: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_cjson
+.PHONY : my_cjson
 
 # fast build rule for target.
-mycjson/fast:
-	$(MAKE) $(MAKESILENT) -f cjson/CMakeFiles/mycjson.dir/build.make cjson/CMakeFiles/mycjson.dir/build
-.PHONY : mycjson/fast
+my_cjson/fast:
+	$(MAKE) $(MAKESILENT) -f com_cjson/CMakeFiles/my_cjson.dir/build.make com_cjson/CMakeFiles/my_cjson.dir/build
+.PHONY : my_cjson/fast
 
 #=============================================================================
-# Target rules for targets named myspdlog
+# Target rules for targets named my_spdlog
 
 # Build rule for target.
-myspdlog: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 myspdlog
-.PHONY : myspdlog
+my_spdlog: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_spdlog
+.PHONY : my_spdlog
 
 # fast build rule for target.
-myspdlog/fast:
-	$(MAKE) $(MAKESILENT) -f spdlog/CMakeFiles/myspdlog.dir/build.make spdlog/CMakeFiles/myspdlog.dir/build
-.PHONY : myspdlog/fast
+my_spdlog/fast:
+	$(MAKE) $(MAKESILENT) -f com_spdlog/CMakeFiles/my_spdlog.dir/build.make com_spdlog/CMakeFiles/my_spdlog.dir/build
+.PHONY : my_spdlog/fast
 
 #=============================================================================
-# Target rules for targets named mysqlite
+# Target rules for targets named my_sqlite
 
 # Build rule for target.
-mysqlite: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mysqlite
-.PHONY : mysqlite
+my_sqlite: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_sqlite
+.PHONY : my_sqlite
 
 # fast build rule for target.
-mysqlite/fast:
-	$(MAKE) $(MAKESILENT) -f sqlite3/CMakeFiles/mysqlite.dir/build.make sqlite3/CMakeFiles/mysqlite.dir/build
-.PHONY : mysqlite/fast
+my_sqlite/fast:
+	$(MAKE) $(MAKESILENT) -f com_sqlite3/CMakeFiles/my_sqlite.dir/build.make com_sqlite3/CMakeFiles/my_sqlite.dir/build
+.PHONY : my_sqlite/fast
 
 #=============================================================================
-# Target rules for targets named myzlog
+# Target rules for targets named my_zlog
 
 # Build rule for target.
-myzlog: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 myzlog
-.PHONY : myzlog
+my_zlog: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_zlog
+.PHONY : my_zlog
 
 # fast build rule for target.
-myzlog/fast:
-	$(MAKE) $(MAKESILENT) -f zlog/CMakeFiles/myzlog.dir/build.make zlog/CMakeFiles/myzlog.dir/build
-.PHONY : myzlog/fast
+my_zlog/fast:
+	$(MAKE) $(MAKESILENT) -f com_zlog/CMakeFiles/my_zlog.dir/build.make com_zlog/CMakeFiles/my_zlog.dir/build
+.PHONY : my_zlog/fast
 
 demo.o: demo.c.o
 .PHONY : demo.o
@@ -226,12 +226,12 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... my_base64"
+	@echo "... my_cjson"
+	@echo "... my_spdlog"
+	@echo "... my_sqlite"
+	@echo "... my_zlog"
 	@echo "... myapp"
-	@echo "... mybase64"
-	@echo "... mycjson"
-	@echo "... myspdlog"
-	@echo "... mysqlite"
-	@echo "... myzlog"
 	@echo "... demo.o"
 	@echo "... demo.i"
 	@echo "... demo.s"

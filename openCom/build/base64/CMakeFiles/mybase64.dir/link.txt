@@ -1,1 +1,0 @@
-/usr/bin/cc  -std=gnu99 -O0 -g -std=gnu99 -O0 -g CMakeFiles/mybase64.dir/base64.c.o CMakeFiles/mybase64.dir/test_base64.c.o -o ../../bin/mybase64 

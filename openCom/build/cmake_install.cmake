@@ -1,4 +1,4 @@
-# Install script for directory: /root/VMCode/github/A_Linux_Demo/openCom
+# Install script for directory: /home/ljk/hgfs.link/VMCode/github/A_Linux_Demo/OpenCom
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,11 +44,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/root/VMCode/github/A_Linux_Demo/openCom/build/base64/cmake_install.cmake")
-  include("/root/VMCode/github/A_Linux_Demo/openCom/build/cjson/cmake_install.cmake")
-  include("/root/VMCode/github/A_Linux_Demo/openCom/build/spdlog/cmake_install.cmake")
-  include("/root/VMCode/github/A_Linux_Demo/openCom/build/sqlite3/cmake_install.cmake")
-  include("/root/VMCode/github/A_Linux_Demo/openCom/build/zlog/cmake_install.cmake")
+  include("/home/ljk/hgfs.link/VMCode/github/A_Linux_Demo/OpenCom/build/com_base64/cmake_install.cmake")
+  include("/home/ljk/hgfs.link/VMCode/github/A_Linux_Demo/OpenCom/build/com_cjson/cmake_install.cmake")
+  include("/home/ljk/hgfs.link/VMCode/github/A_Linux_Demo/OpenCom/build/com_spdlog/cmake_install.cmake")
+  include("/home/ljk/hgfs.link/VMCode/github/A_Linux_Demo/OpenCom/build/com_sqlite3/cmake_install.cmake")
+  include("/home/ljk/hgfs.link/VMCode/github/A_Linux_Demo/OpenCom/build/com_zlog/cmake_install.cmake")
 
 endif()
 
@@ -60,5 +60,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/root/VMCode/github/A_Linux_Demo/openCom/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ljk/hgfs.link/VMCode/github/A_Linux_Demo/OpenCom/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

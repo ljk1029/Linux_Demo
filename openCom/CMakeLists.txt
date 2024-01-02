@@ -29,16 +29,13 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/)
 #包含源文件 ，aux_source_directory将目录所有源文件自动加入 
 #aux_source_directory(${CMAKE_SOURCE_DIR}/src/common SOURCE_COMMON) 
 
-
-
-
-
-#生成IDPS可执行，这里直接放源文件也行如main.c；太多话，可以设置目录例如SOURCE_COMMON。 
+#生成可执行文件，这里直接放源文件也行如main.c；太多话，可以设置目录例如SOURCE_COMMON。 
 add_executable(myapp 
         ${CMAKE_SOURCE_DIR}/demo.c 
     ) 
+
 #链接我们需要的库，如lpthread系统库，预编译好的库lspdlog，需要2.5设置好路径 
-target_link_libraries( myapp 
+target_link_libraries(myapp 
 #        -lspdlog 
 #        -lpthread 
 #        -lstdc++ 
@@ -49,11 +46,11 @@ set_target_properties(myapp PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin)
 
 # 添加子目录，包含 gtest 的构建
-add_subdirectory(base64)
-add_subdirectory(cjson)
-add_subdirectory(spdlog)
-add_subdirectory(sqlite3)
-add_subdirectory(zlog)
+add_subdirectory(com_base64)
+add_subdirectory(com_cjson)
+add_subdirectory(com_spdlog)
+add_subdirectory(com_sqlite3)
+add_subdirectory(com_zlog)
 
 
 

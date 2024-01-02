@@ -54,114 +54,114 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/VMCode/github/A_Linux_Demo/openCom
+CMAKE_SOURCE_DIR = /home/ljk/hgfs.link/VMCode/github/A_Linux_Demo/OpenCom
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/VMCode/github/A_Linux_Demo/openCom/build
+CMAKE_BINARY_DIR = /home/ljk/hgfs.link/VMCode/github/A_Linux_Demo/OpenCom/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
 all: CMakeFiles/myapp.dir/all
-all: base64/all
-all: cjson/all
-all: spdlog/all
-all: sqlite3/all
-all: zlog/all
+all: com_base64/all
+all: com_cjson/all
+all: com_spdlog/all
+all: com_sqlite3/all
+all: com_zlog/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: base64/preinstall
-preinstall: cjson/preinstall
-preinstall: spdlog/preinstall
-preinstall: sqlite3/preinstall
-preinstall: zlog/preinstall
+preinstall: com_base64/preinstall
+preinstall: com_cjson/preinstall
+preinstall: com_spdlog/preinstall
+preinstall: com_sqlite3/preinstall
+preinstall: com_zlog/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/myapp.dir/clean
-clean: base64/clean
-clean: cjson/clean
-clean: spdlog/clean
-clean: sqlite3/clean
-clean: zlog/clean
+clean: com_base64/clean
+clean: com_cjson/clean
+clean: com_spdlog/clean
+clean: com_sqlite3/clean
+clean: com_zlog/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory base64
+# Directory level rules for directory com_base64
 
 # Recursive "all" directory target.
-base64/all: base64/CMakeFiles/mybase64.dir/all
-.PHONY : base64/all
+com_base64/all: com_base64/CMakeFiles/my_base64.dir/all
+.PHONY : com_base64/all
 
 # Recursive "preinstall" directory target.
-base64/preinstall:
-.PHONY : base64/preinstall
+com_base64/preinstall:
+.PHONY : com_base64/preinstall
 
 # Recursive "clean" directory target.
-base64/clean: base64/CMakeFiles/mybase64.dir/clean
-.PHONY : base64/clean
+com_base64/clean: com_base64/CMakeFiles/my_base64.dir/clean
+.PHONY : com_base64/clean
 
 #=============================================================================
-# Directory level rules for directory cjson
+# Directory level rules for directory com_cjson
 
 # Recursive "all" directory target.
-cjson/all: cjson/CMakeFiles/mycjson.dir/all
-.PHONY : cjson/all
+com_cjson/all: com_cjson/CMakeFiles/my_cjson.dir/all
+.PHONY : com_cjson/all
 
 # Recursive "preinstall" directory target.
-cjson/preinstall:
-.PHONY : cjson/preinstall
+com_cjson/preinstall:
+.PHONY : com_cjson/preinstall
 
 # Recursive "clean" directory target.
-cjson/clean: cjson/CMakeFiles/mycjson.dir/clean
-.PHONY : cjson/clean
+com_cjson/clean: com_cjson/CMakeFiles/my_cjson.dir/clean
+.PHONY : com_cjson/clean
 
 #=============================================================================
-# Directory level rules for directory spdlog
+# Directory level rules for directory com_spdlog
 
 # Recursive "all" directory target.
-spdlog/all: spdlog/CMakeFiles/myspdlog.dir/all
-.PHONY : spdlog/all
+com_spdlog/all: com_spdlog/CMakeFiles/my_spdlog.dir/all
+.PHONY : com_spdlog/all
 
 # Recursive "preinstall" directory target.
-spdlog/preinstall:
-.PHONY : spdlog/preinstall
+com_spdlog/preinstall:
+.PHONY : com_spdlog/preinstall
 
 # Recursive "clean" directory target.
-spdlog/clean: spdlog/CMakeFiles/myspdlog.dir/clean
-.PHONY : spdlog/clean
+com_spdlog/clean: com_spdlog/CMakeFiles/my_spdlog.dir/clean
+.PHONY : com_spdlog/clean
 
 #=============================================================================
-# Directory level rules for directory sqlite3
+# Directory level rules for directory com_sqlite3
 
 # Recursive "all" directory target.
-sqlite3/all: sqlite3/CMakeFiles/mysqlite.dir/all
-.PHONY : sqlite3/all
+com_sqlite3/all: com_sqlite3/CMakeFiles/my_sqlite.dir/all
+.PHONY : com_sqlite3/all
 
 # Recursive "preinstall" directory target.
-sqlite3/preinstall:
-.PHONY : sqlite3/preinstall
+com_sqlite3/preinstall:
+.PHONY : com_sqlite3/preinstall
 
 # Recursive "clean" directory target.
-sqlite3/clean: sqlite3/CMakeFiles/mysqlite.dir/clean
-.PHONY : sqlite3/clean
+com_sqlite3/clean: com_sqlite3/CMakeFiles/my_sqlite.dir/clean
+.PHONY : com_sqlite3/clean
 
 #=============================================================================
-# Directory level rules for directory zlog
+# Directory level rules for directory com_zlog
 
 # Recursive "all" directory target.
-zlog/all: zlog/CMakeFiles/myzlog.dir/all
-.PHONY : zlog/all
+com_zlog/all: com_zlog/CMakeFiles/my_zlog.dir/all
+.PHONY : com_zlog/all
 
 # Recursive "preinstall" directory target.
-zlog/preinstall:
-.PHONY : zlog/preinstall
+com_zlog/preinstall:
+.PHONY : com_zlog/preinstall
 
 # Recursive "clean" directory target.
-zlog/clean: zlog/CMakeFiles/myzlog.dir/clean
-.PHONY : zlog/clean
+com_zlog/clean: com_zlog/CMakeFiles/my_zlog.dir/clean
+.PHONY : com_zlog/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/myapp.dir
@@ -170,14 +170,14 @@ zlog/clean: zlog/CMakeFiles/myzlog.dir/clean
 CMakeFiles/myapp.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myapp.dir/build.make CMakeFiles/myapp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myapp.dir/build.make CMakeFiles/myapp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/VMCode/github/A_Linux_Demo/openCom/build/CMakeFiles --progress-num=1,2 "Built target myapp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ljk/hgfs.link/VMCode/github/A_Linux_Demo/OpenCom/build/CMakeFiles --progress-num=43,44 "Built target myapp"
 .PHONY : CMakeFiles/myapp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/myapp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/VMCode/github/A_Linux_Demo/openCom/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ljk/hgfs.link/VMCode/github/A_Linux_Demo/OpenCom/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/myapp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/VMCode/github/A_Linux_Demo/openCom/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ljk/hgfs.link/VMCode/github/A_Linux_Demo/OpenCom/build/CMakeFiles 0
 .PHONY : CMakeFiles/myapp.dir/rule
 
 # Convenience name for target.
@@ -190,134 +190,134 @@ CMakeFiles/myapp.dir/clean:
 .PHONY : CMakeFiles/myapp.dir/clean
 
 #=============================================================================
-# Target rules for target base64/CMakeFiles/mybase64.dir
+# Target rules for target com_base64/CMakeFiles/my_base64.dir
 
 # All Build rule for target.
-base64/CMakeFiles/mybase64.dir/all:
-	$(MAKE) $(MAKESILENT) -f base64/CMakeFiles/mybase64.dir/build.make base64/CMakeFiles/mybase64.dir/depend
-	$(MAKE) $(MAKESILENT) -f base64/CMakeFiles/mybase64.dir/build.make base64/CMakeFiles/mybase64.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/VMCode/github/A_Linux_Demo/openCom/build/CMakeFiles --progress-num=3,4,5 "Built target mybase64"
-.PHONY : base64/CMakeFiles/mybase64.dir/all
+com_base64/CMakeFiles/my_base64.dir/all:
+	$(MAKE) $(MAKESILENT) -f com_base64/CMakeFiles/my_base64.dir/build.make com_base64/CMakeFiles/my_base64.dir/depend
+	$(MAKE) $(MAKESILENT) -f com_base64/CMakeFiles/my_base64.dir/build.make com_base64/CMakeFiles/my_base64.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ljk/hgfs.link/VMCode/github/A_Linux_Demo/OpenCom/build/CMakeFiles --progress-num=1,2,3 "Built target my_base64"
+.PHONY : com_base64/CMakeFiles/my_base64.dir/all
 
 # Build rule for subdir invocation for target.
-base64/CMakeFiles/mybase64.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/VMCode/github/A_Linux_Demo/openCom/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 base64/CMakeFiles/mybase64.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/VMCode/github/A_Linux_Demo/openCom/build/CMakeFiles 0
-.PHONY : base64/CMakeFiles/mybase64.dir/rule
+com_base64/CMakeFiles/my_base64.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ljk/hgfs.link/VMCode/github/A_Linux_Demo/OpenCom/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 com_base64/CMakeFiles/my_base64.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ljk/hgfs.link/VMCode/github/A_Linux_Demo/OpenCom/build/CMakeFiles 0
+.PHONY : com_base64/CMakeFiles/my_base64.dir/rule
 
 # Convenience name for target.
-mybase64: base64/CMakeFiles/mybase64.dir/rule
-.PHONY : mybase64
+my_base64: com_base64/CMakeFiles/my_base64.dir/rule
+.PHONY : my_base64
 
 # clean rule for target.
-base64/CMakeFiles/mybase64.dir/clean:
-	$(MAKE) $(MAKESILENT) -f base64/CMakeFiles/mybase64.dir/build.make base64/CMakeFiles/mybase64.dir/clean
-.PHONY : base64/CMakeFiles/mybase64.dir/clean
+com_base64/CMakeFiles/my_base64.dir/clean:
+	$(MAKE) $(MAKESILENT) -f com_base64/CMakeFiles/my_base64.dir/build.make com_base64/CMakeFiles/my_base64.dir/clean
+.PHONY : com_base64/CMakeFiles/my_base64.dir/clean
 
 #=============================================================================
-# Target rules for target cjson/CMakeFiles/mycjson.dir
+# Target rules for target com_cjson/CMakeFiles/my_cjson.dir
 
 # All Build rule for target.
-cjson/CMakeFiles/mycjson.dir/all:
-	$(MAKE) $(MAKESILENT) -f cjson/CMakeFiles/mycjson.dir/build.make cjson/CMakeFiles/mycjson.dir/depend
-	$(MAKE) $(MAKESILENT) -f cjson/CMakeFiles/mycjson.dir/build.make cjson/CMakeFiles/mycjson.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/VMCode/github/A_Linux_Demo/openCom/build/CMakeFiles --progress-num=6,7,8 "Built target mycjson"
-.PHONY : cjson/CMakeFiles/mycjson.dir/all
+com_cjson/CMakeFiles/my_cjson.dir/all:
+	$(MAKE) $(MAKESILENT) -f com_cjson/CMakeFiles/my_cjson.dir/build.make com_cjson/CMakeFiles/my_cjson.dir/depend
+	$(MAKE) $(MAKESILENT) -f com_cjson/CMakeFiles/my_cjson.dir/build.make com_cjson/CMakeFiles/my_cjson.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ljk/hgfs.link/VMCode/github/A_Linux_Demo/OpenCom/build/CMakeFiles --progress-num=4,5,6 "Built target my_cjson"
+.PHONY : com_cjson/CMakeFiles/my_cjson.dir/all
 
 # Build rule for subdir invocation for target.
-cjson/CMakeFiles/mycjson.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/VMCode/github/A_Linux_Demo/openCom/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cjson/CMakeFiles/mycjson.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/VMCode/github/A_Linux_Demo/openCom/build/CMakeFiles 0
-.PHONY : cjson/CMakeFiles/mycjson.dir/rule
+com_cjson/CMakeFiles/my_cjson.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ljk/hgfs.link/VMCode/github/A_Linux_Demo/OpenCom/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 com_cjson/CMakeFiles/my_cjson.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ljk/hgfs.link/VMCode/github/A_Linux_Demo/OpenCom/build/CMakeFiles 0
+.PHONY : com_cjson/CMakeFiles/my_cjson.dir/rule
 
 # Convenience name for target.
-mycjson: cjson/CMakeFiles/mycjson.dir/rule
-.PHONY : mycjson
+my_cjson: com_cjson/CMakeFiles/my_cjson.dir/rule
+.PHONY : my_cjson
 
 # clean rule for target.
-cjson/CMakeFiles/mycjson.dir/clean:
-	$(MAKE) $(MAKESILENT) -f cjson/CMakeFiles/mycjson.dir/build.make cjson/CMakeFiles/mycjson.dir/clean
-.PHONY : cjson/CMakeFiles/mycjson.dir/clean
+com_cjson/CMakeFiles/my_cjson.dir/clean:
+	$(MAKE) $(MAKESILENT) -f com_cjson/CMakeFiles/my_cjson.dir/build.make com_cjson/CMakeFiles/my_cjson.dir/clean
+.PHONY : com_cjson/CMakeFiles/my_cjson.dir/clean
 
 #=============================================================================
-# Target rules for target spdlog/CMakeFiles/myspdlog.dir
+# Target rules for target com_spdlog/CMakeFiles/my_spdlog.dir
 
 # All Build rule for target.
-spdlog/CMakeFiles/myspdlog.dir/all:
-	$(MAKE) $(MAKESILENT) -f spdlog/CMakeFiles/myspdlog.dir/build.make spdlog/CMakeFiles/myspdlog.dir/depend
-	$(MAKE) $(MAKESILENT) -f spdlog/CMakeFiles/myspdlog.dir/build.make spdlog/CMakeFiles/myspdlog.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/VMCode/github/A_Linux_Demo/openCom/build/CMakeFiles --progress-num=9,10,11,12,13,14,15,16,17 "Built target myspdlog"
-.PHONY : spdlog/CMakeFiles/myspdlog.dir/all
+com_spdlog/CMakeFiles/my_spdlog.dir/all:
+	$(MAKE) $(MAKESILENT) -f com_spdlog/CMakeFiles/my_spdlog.dir/build.make com_spdlog/CMakeFiles/my_spdlog.dir/depend
+	$(MAKE) $(MAKESILENT) -f com_spdlog/CMakeFiles/my_spdlog.dir/build.make com_spdlog/CMakeFiles/my_spdlog.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ljk/hgfs.link/VMCode/github/A_Linux_Demo/OpenCom/build/CMakeFiles --progress-num=7,8,9,10,11,12,13,14,15 "Built target my_spdlog"
+.PHONY : com_spdlog/CMakeFiles/my_spdlog.dir/all
 
 # Build rule for subdir invocation for target.
-spdlog/CMakeFiles/myspdlog.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/VMCode/github/A_Linux_Demo/openCom/build/CMakeFiles 9
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 spdlog/CMakeFiles/myspdlog.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/VMCode/github/A_Linux_Demo/openCom/build/CMakeFiles 0
-.PHONY : spdlog/CMakeFiles/myspdlog.dir/rule
+com_spdlog/CMakeFiles/my_spdlog.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ljk/hgfs.link/VMCode/github/A_Linux_Demo/OpenCom/build/CMakeFiles 9
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 com_spdlog/CMakeFiles/my_spdlog.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ljk/hgfs.link/VMCode/github/A_Linux_Demo/OpenCom/build/CMakeFiles 0
+.PHONY : com_spdlog/CMakeFiles/my_spdlog.dir/rule
 
 # Convenience name for target.
-myspdlog: spdlog/CMakeFiles/myspdlog.dir/rule
-.PHONY : myspdlog
+my_spdlog: com_spdlog/CMakeFiles/my_spdlog.dir/rule
+.PHONY : my_spdlog
 
 # clean rule for target.
-spdlog/CMakeFiles/myspdlog.dir/clean:
-	$(MAKE) $(MAKESILENT) -f spdlog/CMakeFiles/myspdlog.dir/build.make spdlog/CMakeFiles/myspdlog.dir/clean
-.PHONY : spdlog/CMakeFiles/myspdlog.dir/clean
+com_spdlog/CMakeFiles/my_spdlog.dir/clean:
+	$(MAKE) $(MAKESILENT) -f com_spdlog/CMakeFiles/my_spdlog.dir/build.make com_spdlog/CMakeFiles/my_spdlog.dir/clean
+.PHONY : com_spdlog/CMakeFiles/my_spdlog.dir/clean
 
 #=============================================================================
-# Target rules for target sqlite3/CMakeFiles/mysqlite.dir
+# Target rules for target com_sqlite3/CMakeFiles/my_sqlite.dir
 
 # All Build rule for target.
-sqlite3/CMakeFiles/mysqlite.dir/all:
-	$(MAKE) $(MAKESILENT) -f sqlite3/CMakeFiles/mysqlite.dir/build.make sqlite3/CMakeFiles/mysqlite.dir/depend
-	$(MAKE) $(MAKESILENT) -f sqlite3/CMakeFiles/mysqlite.dir/build.make sqlite3/CMakeFiles/mysqlite.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/VMCode/github/A_Linux_Demo/openCom/build/CMakeFiles --progress-num=18,19,20,21 "Built target mysqlite"
-.PHONY : sqlite3/CMakeFiles/mysqlite.dir/all
+com_sqlite3/CMakeFiles/my_sqlite.dir/all:
+	$(MAKE) $(MAKESILENT) -f com_sqlite3/CMakeFiles/my_sqlite.dir/build.make com_sqlite3/CMakeFiles/my_sqlite.dir/depend
+	$(MAKE) $(MAKESILENT) -f com_sqlite3/CMakeFiles/my_sqlite.dir/build.make com_sqlite3/CMakeFiles/my_sqlite.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ljk/hgfs.link/VMCode/github/A_Linux_Demo/OpenCom/build/CMakeFiles --progress-num=16,17,18,19 "Built target my_sqlite"
+.PHONY : com_sqlite3/CMakeFiles/my_sqlite.dir/all
 
 # Build rule for subdir invocation for target.
-sqlite3/CMakeFiles/mysqlite.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/VMCode/github/A_Linux_Demo/openCom/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sqlite3/CMakeFiles/mysqlite.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/VMCode/github/A_Linux_Demo/openCom/build/CMakeFiles 0
-.PHONY : sqlite3/CMakeFiles/mysqlite.dir/rule
+com_sqlite3/CMakeFiles/my_sqlite.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ljk/hgfs.link/VMCode/github/A_Linux_Demo/OpenCom/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 com_sqlite3/CMakeFiles/my_sqlite.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ljk/hgfs.link/VMCode/github/A_Linux_Demo/OpenCom/build/CMakeFiles 0
+.PHONY : com_sqlite3/CMakeFiles/my_sqlite.dir/rule
 
 # Convenience name for target.
-mysqlite: sqlite3/CMakeFiles/mysqlite.dir/rule
-.PHONY : mysqlite
+my_sqlite: com_sqlite3/CMakeFiles/my_sqlite.dir/rule
+.PHONY : my_sqlite
 
 # clean rule for target.
-sqlite3/CMakeFiles/mysqlite.dir/clean:
-	$(MAKE) $(MAKESILENT) -f sqlite3/CMakeFiles/mysqlite.dir/build.make sqlite3/CMakeFiles/mysqlite.dir/clean
-.PHONY : sqlite3/CMakeFiles/mysqlite.dir/clean
+com_sqlite3/CMakeFiles/my_sqlite.dir/clean:
+	$(MAKE) $(MAKESILENT) -f com_sqlite3/CMakeFiles/my_sqlite.dir/build.make com_sqlite3/CMakeFiles/my_sqlite.dir/clean
+.PHONY : com_sqlite3/CMakeFiles/my_sqlite.dir/clean
 
 #=============================================================================
-# Target rules for target zlog/CMakeFiles/myzlog.dir
+# Target rules for target com_zlog/CMakeFiles/my_zlog.dir
 
 # All Build rule for target.
-zlog/CMakeFiles/myzlog.dir/all:
-	$(MAKE) $(MAKESILENT) -f zlog/CMakeFiles/myzlog.dir/build.make zlog/CMakeFiles/myzlog.dir/depend
-	$(MAKE) $(MAKESILENT) -f zlog/CMakeFiles/myzlog.dir/build.make zlog/CMakeFiles/myzlog.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/VMCode/github/A_Linux_Demo/openCom/build/CMakeFiles --progress-num=22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44 "Built target myzlog"
-.PHONY : zlog/CMakeFiles/myzlog.dir/all
+com_zlog/CMakeFiles/my_zlog.dir/all:
+	$(MAKE) $(MAKESILENT) -f com_zlog/CMakeFiles/my_zlog.dir/build.make com_zlog/CMakeFiles/my_zlog.dir/depend
+	$(MAKE) $(MAKESILENT) -f com_zlog/CMakeFiles/my_zlog.dir/build.make com_zlog/CMakeFiles/my_zlog.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ljk/hgfs.link/VMCode/github/A_Linux_Demo/OpenCom/build/CMakeFiles --progress-num=20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42 "Built target my_zlog"
+.PHONY : com_zlog/CMakeFiles/my_zlog.dir/all
 
 # Build rule for subdir invocation for target.
-zlog/CMakeFiles/myzlog.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/VMCode/github/A_Linux_Demo/openCom/build/CMakeFiles 23
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zlog/CMakeFiles/myzlog.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/VMCode/github/A_Linux_Demo/openCom/build/CMakeFiles 0
-.PHONY : zlog/CMakeFiles/myzlog.dir/rule
+com_zlog/CMakeFiles/my_zlog.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ljk/hgfs.link/VMCode/github/A_Linux_Demo/OpenCom/build/CMakeFiles 23
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 com_zlog/CMakeFiles/my_zlog.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ljk/hgfs.link/VMCode/github/A_Linux_Demo/OpenCom/build/CMakeFiles 0
+.PHONY : com_zlog/CMakeFiles/my_zlog.dir/rule
 
 # Convenience name for target.
-myzlog: zlog/CMakeFiles/myzlog.dir/rule
-.PHONY : myzlog
+my_zlog: com_zlog/CMakeFiles/my_zlog.dir/rule
+.PHONY : my_zlog
 
 # clean rule for target.
-zlog/CMakeFiles/myzlog.dir/clean:
-	$(MAKE) $(MAKESILENT) -f zlog/CMakeFiles/myzlog.dir/build.make zlog/CMakeFiles/myzlog.dir/clean
-.PHONY : zlog/CMakeFiles/myzlog.dir/clean
+com_zlog/CMakeFiles/my_zlog.dir/clean:
+	$(MAKE) $(MAKESILENT) -f com_zlog/CMakeFiles/my_zlog.dir/build.make com_zlog/CMakeFiles/my_zlog.dir/clean
+.PHONY : com_zlog/CMakeFiles/my_zlog.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
