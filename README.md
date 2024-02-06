@@ -4,7 +4,6 @@
 ## 1、Linux
 ### openCom 
   简单编译、开源小组件
-
   base64
   cjson
   spdlog
@@ -15,7 +14,9 @@
 ### openLib 
   复杂编译、开源库
   openssl
-
+  libcurl
+  libwebsocket
+  libpcap
 
 
 ### crypto
@@ -29,19 +30,20 @@
 ### network
   网络相关
 
+
 ### API 相关
 
 
 ### driver
-驱动相关
+  驱动相关
 
 
 ## 2、Lua
-lua语言
+  lua语言
 
 
 ## 3、加密网站
-https://the-x.cn/cryptography/Aes.aspx
+  https://the-x.cn/cryptography/Aes.aspx
 
 
 ## 提交类型
